@@ -19,8 +19,9 @@ class WeatherScreenCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Padding(
+      child: Container(
         padding: const EdgeInsets.all(8.0),
+        alignment: Alignment.center,
         child: SizedBox(
           width: 100,
           height: 100,
