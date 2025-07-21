@@ -25,21 +25,22 @@ class WeatherScreenMainCard extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(20)),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: const SizedBox(
+          child: SizedBox(
             width: double.infinity,
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    '300*F',
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                    temperature,
+                    style: const TextStyle(
+                        fontSize: 32, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 16),
-                  Icon(Icons.cloud, size: 64),
-                  SizedBox(height: 16),
-                  Text(
+                  const SizedBox(height: 16),
+                  const Icon(Icons.cloud, size: 64),
+                  const SizedBox(height: 16),
+                  const Text(
                     'Rain',
                     style: TextStyle(fontSize: 20),
                   ),
